@@ -1,0 +1,6 @@
+/* Bootstrap + CRM style entry point */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import './variables.css';
+@import './components.css';
+@import './rtl.css';

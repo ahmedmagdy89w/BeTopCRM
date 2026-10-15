@@ -1,0 +1,32 @@
+/* CRM Custom Properties — override Bootstrap defaults */
+:root {
+  --bs-font-sans-serif: 'Plus Jakarta Sans', 'Cairo', Inter, ui-sans-serif, system-ui, sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-color: #172033;
+  --bs-body-bg: #f5f7fb;
+  --bs-primary: #5b5bd6;
+  --bs-primary-rgb: 91, 91, 214;
+  --bs-secondary: #68738a;
+  --bs-secondary-rgb: 104, 115, 138;
+  --bs-success: #149b83;
+  --bs-success-rgb: 20, 155, 131;
+  --bs-danger: #d95c73;
+  --bs-danger-rgb: 217, 92, 115;
+  --bs-warning: #d69435;
+  --bs-warning-rgb: 214, 148, 53;
+  --bs-info: #3d91b8;
+  --bs-info-rgb: 61, 145, 184;
+  --bs-border-color: #e4e8f0;
+  --bs-border-radius: 0.7rem;
+  --bs-border-radius-sm: 0.5rem;
+  --bs-box-shadow-sm: 0 2px 8px rgba(23, 32, 51, 0.04);
+
+  /* CRM-specific tokens */
+  --crm-sidebar-width: 248px;
+  --crm-sidebar-collapsed-width: 70px;
+  --crm-topbar-height: 72px;
+  --crm-body-bg: #f5f7fb;
+  --crm-sidebar-bg: #151b2e;
+  --crm-sidebar-muted: #8e98b5;
+  --crm-sidebar-active: #5b5bd6;
+}

@@ -1,0 +1,15 @@
+export type LeadStatus = 'new' | 'contacted' | 'qualified' | 'proposal' | 'negotiation' | 'lost'
+export type CustomerType = 'individual' | 'company'
+export type OpportunityStage = 'prospecting' | 'qualification' | 'proposal' | 'negotiation' | 'won' | 'lost'
+export const OPEN_OPPORTUNITY_STAGES: OpportunityStage[] = ['prospecting', 'qualification', 'proposal', 'negotiation']
+export const CLOSED_OPPORTUNITY_STAGES: OpportunityStage[] = ['won', 'lost']
+export type LeadSource = 'web' | 'referral' | 'cold_call' | 'advertisement' | 'social_media' | 'trade_show' | 'other' | 'website'
+export type CustomerStatus = 'active' | 'at_risk' | 'churned' | 'paused' | 'renewed'
+export type OpportunityType = 'initial' | 'upsell' | 'cross_sell' | 'renewal' | 'downgrade'
+export type TaskPriority = 'low' | 'medium' | 'high' | 'urgent'
+export type TaskStatus = 'pending' | 'in_progress' | 'completed' | 'cancelled'
+export type ActivityType = 'call' | 'email' | 'meeting' | 'task' | 'note'
+export type CustomerActivityType = 'onboarding' | 'support' | 'check_in' | 'review' | 'upsell' | 'renewal' | 'training' | 'complaint' | 'follow_up' | 'whatsapp' | 'general'
+export type ActivityChannel = 'call' | 'email' | 'meeting' | 'whatsapp' | 'in_person' | 'other'
+export type ActivityOutcome = 'positive' | 'neutral' | 'negative' | 'escalated'
+export type CampaignStatus = 'draft' | 'scheduled' | 'sending' | 'sent' | 'cancelled'

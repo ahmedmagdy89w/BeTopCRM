@@ -1,0 +1,167 @@
+/* Sidebar nav RTL fix: move nav padding to left */
+[dir="rtl"] .sidebar .nav {
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+}
+/* RTL-specific overrides — loaded when dir="rtl" */
+
+/* Sidebar positioning */
+[dir="rtl"] .sidebar {
+  inset-inline-end: 0;
+  inset-inline-start: auto;
+  border-inline-end: none;
+  border-inline-start: 1px solid var(--bs-border-color);
+}
+
+/* RTL margin overrides for spacing utilities */
+[dir="rtl"] .me-1 { margin-left: 0.25rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-2 { margin-left: 0.5rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-3 { margin-left: 1rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-4 { margin-left: 1.5rem !important; margin-right: 0 !important; }
+[dir="rtl"] .ms-1 { margin-right: 0.25rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-2 { margin-right: 0.5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-3 { margin-right: 1rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-4 { margin-right: 1.5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-auto { margin-right: auto !important; margin-left: 0 !important; }
+[dir="rtl"] .me-auto { margin-left: auto !important; margin-right: 0 !important; }
+
+/* Flip directional icons */
+[dir="rtl"] .bi-arrow-left::before,
+[dir="rtl"] .bi-arrow-right::before,
+[dir="rtl"] .bi-chevron-left::before,
+[dir="rtl"] .bi-chevron-right::before,
+[dir="rtl"] .bi-telephone-forward::before,
+[dir="rtl"] .bi-box-arrow-right::before,
+[dir="rtl"] .bi-box-arrow-left::before,
+[dir="rtl"] .bi-eye-slash::before {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+/* Table alignment */
+[dir="rtl"] .table th,
+[dir="rtl"] .table td {
+  text-align: right;
+}
+
+
+[dir="rtl"] .breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+    padding-left: var(--bs-breadcrumb-item-padding-x);
+    color: var(--bs-breadcrumb-divider-color);
+    content: var(--bs-breadcrumb-divider, "/");
+}
+
+/* Form check inputs */
+[dir="rtl"] .form-check {
+  padding-inline-end: 1.5em;
+  padding-inline-start: 0;
+}
+[dir="rtl"] .form-check .form-check-input {
+  float: right;
+  float: inline-end;
+  margin-inline-end: -1.5em;
+  margin-inline-start: 0;
+}
+
+/* Input groups */
+[dir="rtl"] .ai-api-key-input-group {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-start-start-radius: var(--bs-border-radius);
+  border-end-start-radius: var(--bs-border-radius);
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+[dir="rtl"] .input-group > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+  border-start-end-radius: var(--bs-border-radius);
+  border-end-end-radius: var(--bs-border-radius);
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+}
+
+/* Dropdown alignment */
+[dir="rtl"] .dropdown-menu {
+  direction: rtl;
+  text-align: start;
+}
+[dir="rtl"] .dropdown-menu-end {
+  --bs-position: end;
+  inset-inline-end: auto;
+  inset-inline-start: 0;
+}
+[dir="rtl"] .dropdown-item {
+  direction: rtl;
+  text-align: start;
+}
+[dir="rtl"] .dropdown-item-text {
+  text-align: start;
+}
+[dir="rtl"] .topbar .dropdown-menu .dropdown-item {
+  flex-direction: row;
+}
+
+/* Pagination */
+[dir="rtl"] .pagination {
+  direction: rtl;
+}
+[dir="rtl"] .page-item:first-child .page-link {
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+  border-start-end-radius: var(--bs-border-radius);
+  border-end-end-radius: var(--bs-border-radius);
+}
+[dir="rtl"] .page-item:last-child .page-link {
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  border-start-start-radius: var(--bs-border-radius);
+  border-end-start-radius: var(--bs-border-radius);
+}
+
+/* Modal close button */
+[dir="rtl"] .btn-close {
+  margin-inline-end: auto;
+  margin-inline-start: 0;
+}
+
+/* Toast/notification positioning */
+[dir="rtl"] .Vue-Toastification__toast {
+  direction: rtl;
+}
+
+/* List group */
+[dir="rtl"] .list-group {
+  padding-inline-end: 0;
+}
+
+/* Badge spacing */
+[dir="rtl"] .badge {
+  margin-inline-start: 0.25rem;
+}
+
+/* Global search dropdown */
+[dir="rtl"] .global-search .position-absolute {
+  inset-inline-end: 0;
+  inset-inline-start: auto;
+}
+
+/* Card actions alignment */
+[dir="rtl"] .card-header .btn-group {
+  margin-inline-end: auto;
+  margin-inline-start: 0;
+}
+
+/* Keep the refreshed navigation components aligned in RTL layouts. */
+[dir="rtl"] .breadcrumb-shell .breadcrumb {
+  direction: rtl;
+}
+
+[dir="rtl"] .breadcrumb-shell .breadcrumb-item + .breadcrumb-item::before {
+  content: '‹';
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+  padding-inline: 0.65rem;
+}
